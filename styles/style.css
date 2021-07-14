@@ -169,6 +169,7 @@ span {
 }
 
 .btn {
+	display: inline-block;
 	background-image: var(--secondary-gradient);
 	padding: 10px 20px;
 	text-align: center;

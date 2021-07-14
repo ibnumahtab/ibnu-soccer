@@ -1,3 +1,72 @@
 /* ----------------------------------
 		01. Mobile Devices	
 ---------------------------------- */
+@media only screen and (max-width: 668px) {
+    #menu-bar {
+        display: none;
+    }
+
+    #main-banner {
+        flex-direction: column;
+    }
+
+    #header-part .container {
+        padding: 0 50px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 80px;
+    }
+
+    .btn {
+        padding: 20px 30px;
+        font-size: 60px;
+    }
+
+    #player-hit img {
+        position: relative;
+        top: 10%;
+        left: -11%;
+        width: 100%;
+    }
+
+    #football img {
+        position: relative;
+        top: 39%;
+        left: 12%;
+        animation: football .8s linear infinite;
+    }
+
+    #players-part .container {
+        width: 90%;
+    }
+
+    #players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #player {
+        margin: 25px;
+        padding: 15px;
+    }
+
+    #player-name {
+        font-size: 56px;
+        margin: 30px 0 0;
+    }
+
+    #player-details {
+        margin-top: 10px;
+        font-size: 32px;
+        line-height: 1.5em;
+    }
+
+
+
+
+    #header-part,
+    #footer-part {
+        display: none;
+    }
+}
