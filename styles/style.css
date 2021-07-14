@@ -71,12 +71,11 @@
 :root {
 
 	/* --→ Colors ←-- */
-	--main-color: #181733;
 	--main-gradient: linear-gradient(to right, #181733, #cd122d);
 	--secondary-gradient: linear-gradient(to right, #181733 0%, #163164 51%, #181733 100%);
+
+	--main-color: #fdc52c;
 	--main-text-color: #ffffff;
-	--main-heading-color: #fdc52c;
-	--secondary-color: #cd122d;
 
 	/* --→ Fonts ←-- */
 	--main-font: 'Poppins', sans-serif;
@@ -85,12 +84,11 @@
 
 	--heading1-size: 58px;
 	--heading2-size: 30px;
-	--heading3-size: 26px;
 }
 
 ::selection {
-	color: var(--secondary-color);
-	background-color: var(--main-heading-color);
+	color: var(--main-text-color);
+	background-color: var(--main-color);
 }
 
 /* ----------------------------------
@@ -109,8 +107,7 @@ body {
 }
 
 h1,
-h2,
-h3 {
+h2 {
 	font-family: var(--main-font);
 }
 
@@ -121,21 +118,14 @@ h1 {
 
 h2 {
 	font-size: var(--heading2-size);
+	line-height: 1.3em;
 }
 
-h3 {
-	font-size: var(--heading3-size);
-}
-
-a {
+a,
+button {
 	display: inline-block;
 	text-decoration: none;
-}
-
-ul {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+	cursor: pointer;
 }
 
 img {
@@ -143,18 +133,23 @@ img {
 }
 
 input,
-input:focus{
+input:focus,
+button {
 	display: inline-block;
+	width: 50%;
 	padding: 10px 15px;
-	font-family: var();
-	font-size: var();
+	color: var(--main-color);
+	background-color: #16316428;
+	font-family: var(--heading2-size);
+	font-size: 28px;
 	border: none;
+	border-radius: 5px;
 	outline: none;
 	box-sizing: border-box;
 }
 
 span {
-	color: var(--main-heading-color);
+	color: var(--main-color);
 }
 
 /* ----------------------------------
@@ -174,7 +169,7 @@ span {
 	text-transform: uppercase;
 	transition: 0.5s;
 	background-size: 200% auto;
-	color: var(--main-heading-color);
+	color: var(--main-color);
 }
 
 .btn:hover,
@@ -214,7 +209,7 @@ span {
 
 #nav-menu a {
 	padding-right: 30px;
-	color: var(--main-heading-color);
+	color: var(--main-color);
 	font-weight: 700;
 	letter-spacing: 1.2px;
 	transition: color .7s ease;
@@ -259,7 +254,7 @@ span {
 }
 
 #players-part .container {
-	width: 1030px;
+	width: 1060px;
 }
 
 #players {
@@ -275,7 +270,7 @@ span {
 }
 
 #player-name {
-	color: var(--main-heading-color);
+	color: var(--main-color);
 }
 
 /* ----------------------------------
@@ -307,17 +302,13 @@ span {
 ---------------------------------- */
 
 #hot-topic {
-	background: url(/assets/images/fan-comments-background.png) no-repeat center / cover;
+	background: url('/assets/images/fan-comments-background.png') no-repeat center / cover;
 	text-align: center;
 }
 
 .topic-announcment::before,
 .topic-announcment::after {
 	content: ' _-_-_-_- ';
-}
-
-#hot-sub-heading {
-	line-height: 1.5em;
 }
 
 #hot-topic-item {
@@ -357,24 +348,13 @@ span {
 }
 
 #subscribe-inner h1 {
-	color: var(--main-heading-color);
-}
-
-#subscribe-form input,
-#subscribe-button {
-	width: 50%;
-	color: var(--main-heading-color);
-	background-color: #16316428;
-	font-family: var(--main-font);
-	font-size: 28px;
-	border-radius: 5px;
+	color: var(--main-color);
 }
 
 #subscribe-button {
 	width: 20%;
 	margin-left: 15px;
 	border: none;
-	cursor: pointer;
 }
 
 /* ----------------------------------
@@ -410,14 +390,15 @@ span {
 	margin: 10px;
 	text-align: center;
 	background-image: var(--main-gradient);
-	color: var(--main-heading-color);
+	color: var(--main-color);
 	font-size: 20px;
-	border: 1px solid var(--main-heading-color);
+	border: 1px solid var(--main-color);
 	border-radius: 50%;
 	transition: .5s;
 }
 
-#social-links a i:hover {
+#social-links a i:hover,
+#copyright a span:hover {
 	color: var(--main-text-color);
 	border-color: var(--main-text-color);
 }
