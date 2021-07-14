@@ -3,7 +3,7 @@
 	==========================================================
 
 /*	==========================================================
-	*	Template Name:
+	*	Template Name: Ibnu Soccer
 	* 	Template URL:
 
 	*	Template Descriptions:
@@ -52,7 +52,17 @@
 		00. Import Required Files		
 ---------------------------------- */
 /* --→ Google Fonts ←-- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Ubuntu&display=swap');
 
+@keyframes football {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 /* ----------------------------------
 		01. Root - Custom Properties		
@@ -61,28 +71,26 @@
 :root {
 
 	/* --→ Colors ←-- */
-	--main-color: ;
-	--main-text-color: ;
-	--main-heading-color: ;
-	--secondary-color: ;
+	--main-color: #181733;
+	--main-gradient: linear-gradient(to right, #181733, #cd122d);
+	--secondary-gradient: linear-gradient(to left, #181733, #163164);
+	--main-text-color: #ffffff;
+	--main-heading-color: #fdc52c;
+	--secondary-color: #cd122d;
 
 	/* --→ Fonts ←-- */
-	--main-font: ;
-	--heading-font: ;
-	--text-font: ;
-	--text-size: ;
+	--main-font: 'Poppins', sans-serif;
+	--text-font: 'Ubuntu', sans-serif;
+	--text-size: 18px;
 
-	--heading1-size: ;
-	--heading2-size: ;
-	--heading3-size: ;
-	--heading4-size: ;
-	--heading5-size: ;
-	--heading6-size: ;
+	--heading1-size: 56px;
+	--heading2-size: 32px;
+	--heading3-size: 26px;
 }
 
 ::selection {
-	color: var();
-	background-color: var();
+	color: var(--secondary-color);
+	background-color: var(--main-heading-color);
 }
 
 /* ----------------------------------
@@ -90,12 +98,33 @@
 ---------------------------------- */
 
 body {
-	color: var();
-	font-family: var();
-	font-size: var();
+	margin: 0;
+	padding: 0;
+	color: var(--main-text-color);
+	font-family: var(--text-font);
+	font-size: var(--text-size);
 	line-height: 1.5em;
 	text-rendering: optimizeLegibility;
 	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 {
+	font-family: var(--main-font);
+}
+
+h1 {
+	font-size: var(--heading1-size);
+	line-height: 1.4em;
+}
+
+h2 {
+	font-size: var(--heading2-size);
+}
+
+h3 {
+	font-size: var(--heading3-size);
 }
 
 a {
@@ -136,9 +165,71 @@ span {
 
 .container {
 	max-width: 1200px;
+	margin: 0 auto;
 }
 
 .btn {
-	color: var();
-	background-color: var();
+	padding: 10px 20px;
+	color: var(--main-heading-color);
+	background-image: var(--secondary-gradient);
+}
+
+/* ----------------------------------
+		04. Header Part Styles	
+---------------------------------- */
+#header-part {
+	height: 100vh;
+	background-image: var(--main-gradient);
+	position: relative;
+	overflow: hidden;
+}
+
+#header-part:hover #football img {
+	animation: football .8s linear .1s infinite;
+}
+
+/* → Menu Bar ← */
+#menu-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 150px;
+	overflow: hidden;
+}
+
+#menu-bar a {
+	padding-right: 30px;
+	color: var(--main-heading-color);
+	font-weight: 700;
+	letter-spacing: 1.2px;
+}
+
+#login-button a {
+	padding: 10px 20px;
+	background-image: var(--secondary-gradient);
+}
+
+/* → Banner ← */
+#main-banner {
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0 60px;
+}
+
+#main-image {
+	display: flex;
+	justify-items: space-between;
+}
+
+#football img {
+	position: relative;
+	top: 20%;
+	left: 350%;
+}
+
+#player-hit img {
+	position: relative;
+	top: -8%;
+	left: 25%;
+	width: 75%;
 }
