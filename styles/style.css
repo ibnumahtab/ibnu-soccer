@@ -278,7 +278,7 @@ span {
 ---------------------------------- */
 
 #stream-part {
-	background: url('./assets/images/barca-today.jpg') no-repeat center / cover fixed;
+	background: url('assets/images/barca-today.jpg') no-repeat center / cover fixed;
 }
 
 #stream-banner {
@@ -302,7 +302,7 @@ span {
 ---------------------------------- */
 
 #hot-topic {
-	background: url('./assets/images/fan-comments-background.png') no-repeat center / cover;
+	background: url('assets/images/fan-comments-background.png') no-repeat center / cover;
 	text-align: center;
 }
 
