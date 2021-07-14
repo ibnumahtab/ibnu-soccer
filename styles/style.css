@@ -83,8 +83,8 @@
 	--text-font: 'Ubuntu', sans-serif;
 	--text-size: 18px;
 
-	--heading1-size: 56px;
-	--heading2-size: 32px;
+	--heading1-size: 58px;
+	--heading2-size: 30px;
 	--heading3-size: 26px;
 }
 
@@ -116,7 +116,7 @@ h3 {
 
 h1 {
 	font-size: var(--heading1-size);
-	line-height: 1.4em;
+	line-height: 1.3em;
 }
 
 h2 {
@@ -171,19 +171,17 @@ span {
 
 .btn {
 	background-image: var(--secondary-gradient);
-	margin: 10px;
 	padding: 10px 20px;
 	text-align: center;
 	text-transform: uppercase;
 	transition: 0.5s;
 	background-size: 200% auto;
-	color: white;
-	border-radius: 10px;
+	color: var(--main-heading-color);
 }
 
-.btn:hover {
+.btn:hover,
+#menu-bar a:hover {
 	background-position: right center;
-	/* change the direction of the change here */
 	color: #fff;
 	text-decoration: none;
 }
@@ -216,11 +214,12 @@ span {
 	overflow: hidden;
 }
 
-#menu-bar a {
+#nav-menu a {
 	padding-right: 30px;
 	color: var(--main-heading-color);
 	font-weight: 700;
 	letter-spacing: 1.2px;
+	transition: color .7s ease;
 }
 
 #login-button a {
@@ -275,4 +274,80 @@ span {
 	padding: 15px;
 	box-shadow: 0 0 12px #ffffff33;
 	background-image: var(--secondary-gradient);
+}
+
+#player-name {
+	color: var(--main-heading-color);
+}
+
+/* ----------------------------------
+		06. Stream Part Styles	
+---------------------------------- */
+
+#stream-part {
+	background: url('/assets/images/barca-today.jpg') no-repeat center / cover fixed;
+}
+
+#stream-banner {
+	display: flex;
+	align-items: center;
+}
+
+#stream-description {
+	padding-right: 200px;
+}
+
+#stream-image {
+	box-shadow: 0 0 20px rgba(255, 255, 255, 0.438);
+	border: 10px solid;
+	border-image: var(--secondary-gradient);
+	border-image-slice: 1;
+}
+
+/* ----------------------------------
+		07. Footer Part Styles	
+---------------------------------- */
+
+#footer-part {
+	background-image: var(--secondary-gradient);
+	text-align: center;
+}
+
+#footer-part .container {
+	padding: 40px 0;
+}
+
+#footer-logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#footer-image img {
+	width: 50%;
+}
+
+#footer-text h1 {
+	font-size: 70px;
+}
+
+#social-links a i {
+	display: block;
+	padding: 15px;
+	margin: 10px;
+	text-align: center;
+	background-image: var(--main-gradient);
+	color: var(--main-heading-color);
+	font-size: 20px;
+	border: 1px solid var(--main-heading-color);
+	border-radius: 50%;
+	transition: .5s;
+}
+
+#social-links a i:hover {
+	color: var(--main-text-color);
+}
+
+#copyright a {
+	color: var(--main-heading-color);
 }
