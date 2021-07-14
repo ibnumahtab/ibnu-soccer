@@ -65,7 +65,10 @@
 
 
 
-    #header-part,
+   
+    #stream-part,
+    #hot-topic,
+    #subscribe-part,
     #footer-part {
         display: none;
     }
