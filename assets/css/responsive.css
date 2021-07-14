@@ -1,7 +1,7 @@
 /* ----------------------------------
 		01. Mobile Devices	
 ---------------------------------- */
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 320px) {
     #menu-bar {
         display: none;
     }
@@ -11,17 +11,17 @@
     }
 
     #header-part .container {
-        padding: 0 50px;
+        padding: 0 35px;
         text-align: center;
     }
 
     h1 {
-        font-size: 80px;
+        font-size: 32px;
     }
 
     .btn {
         padding: 20px 30px;
-        font-size: 60px;
+        font-size: 22px;
     }
 
     #player-hit img {
@@ -52,13 +52,13 @@
     }
 
     #player-name {
-        font-size: 56px;
+        font-size: 22px;
         margin: 30px 0 0;
     }
 
     #player-details {
         margin-top: 10px;
-        font-size: 32px;
+        font-size: 16px;
         line-height: 1.5em;
     }
 
