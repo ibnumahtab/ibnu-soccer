@@ -1,0 +1,144 @@
+/*	==========================================================
+	-------------------->>> CSS Styles <<<--------------------
+	==========================================================
+
+/*	==========================================================
+	*	Template Name:
+	* 	Template URL:
+
+	*	Template Descriptions:
+		---------------------
+	
+	*	About Author
+		------------
+		Author Name: Ibnu Mahtab Hussain
+		Author URL: http://ibnucode.com
+		Support: ibnumahtab@gmail.com
+
+	*	Get In Touch
+		------------
+		GitHub: https://github.com/ibnumahtab
+
+		Facebook: https://www.facebook.com/ibnumahtab
+		Twitter: https://twitter.com/IbnuMahtab
+		
+		Telegram: https://t.me/ibnumahtab 
+	
+	*	Version Update
+		--------------
+		Version: 1.0
+	
+/*	=========================================================
+
+/* ==========================================================
+
+	Table of Content
+	----------------
+	00. Import Required Files
+	01. Root - Custom Properties
+	02. Utilities
+	03. Common Class Styles
+	04. 
+	05. 
+	06. 
+	07. 
+	08. 
+	09.
+	10.
+
+ ==========================================================
+
+/* ----------------------------------
+		00. Import Required Files		
+---------------------------------- */
+/* --→ Google Fonts ←-- */
+
+
+/* ----------------------------------
+		01. Root - Custom Properties		
+---------------------------------- */
+
+:root {
+
+	/* --→ Colors ←-- */
+	--main-color: ;
+	--main-text-color: ;
+	--main-heading-color: ;
+	--secondary-color: ;
+
+	/* --→ Fonts ←-- */
+	--main-font: ;
+	--heading-font: ;
+	--text-font: ;
+	--text-size: ;
+
+	--heading1-size: ;
+	--heading2-size: ;
+	--heading3-size: ;
+	--heading4-size: ;
+	--heading5-size: ;
+	--heading6-size: ;
+}
+
+::selection {
+	color: var();
+	background-color: var();
+}
+
+/* ----------------------------------
+		02. Utilities		
+---------------------------------- */
+
+body {
+	color: var();
+	font-family: var();
+	font-size: var();
+	line-height: 1.5em;
+	text-rendering: optimizeLegibility;
+	box-sizing: border-box;
+}
+
+a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+input,
+textarea,
+input:focus,
+textarea:focus {
+	display: inline-block;
+	padding: 10px 10px;
+	font-family: var();
+	font-size: var();
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+span {
+	color: var();
+}
+
+/* ----------------------------------
+		03. Common Class Styles	
+---------------------------------- */
+
+.container {
+	max-width: 1200px;
+}
+
+.btn {
+	color: var();
+	background-color: var();
+}
