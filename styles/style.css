@@ -268,10 +268,10 @@ span {
 #players {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
 }
 
 #player {
-	margin: 15px;
 	padding: 15px;
 	box-shadow: 0 0 12px #ffffff33;
 	background-image: var(--secondary-gradient);
@@ -283,7 +283,7 @@ span {
 
 /* → Stream Part ← */
 #stream-part {
-	background: url('/assets/images/barca-today.jpg') no-repeat center / cover fixed;
+	background: url('../assets/images/barca-today.jpg') no-repeat center / cover fixed;
 }
 
 #stream-banner {
@@ -304,7 +304,7 @@ span {
 
 /* → Hot Topic Part ← */
 #hot-topic {
-	background: url('/assets/images/fan-comments-background.png') no-repeat center / cover;
+	background: url('../assets/images/fan-comments-background.png') no-repeat center / cover;
 	text-align: center;
 }
 
