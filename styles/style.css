@@ -307,6 +307,33 @@ span {
 /* ----------------------------------
 		07. Footer Part Styles	
 ---------------------------------- */
+#achievement-part .container {
+	padding: 60px 0;
+	margin-top: 60px;
+	background-color: #111025;
+	border: 1px solid #163164;
+	border-radius: 0 0 10px 10px;
+}
+
+#subscribe-inner {
+	padding: 0 40px;
+}
+
+#subscribe-form input {
+	width: 50%;
+	padding: 10px 15px;
+	color: var(--main-heading-color);
+	background-color: #16316428;
+	font-family: var(--main-font);
+	font-size: 28px;
+	border-radius: 5px;
+}
+
+
+
+/* ----------------------------------
+		08. Footer Part Styles	
+---------------------------------- */
 
 #footer-part {
 	background-image: var(--secondary-gradient);
