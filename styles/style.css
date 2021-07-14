@@ -143,11 +143,9 @@ img {
 }
 
 input,
-textarea,
-input:focus,
-textarea:focus {
+input:focus{
 	display: inline-block;
-	padding: 10px 10px;
+	padding: 10px 15px;
 	font-family: var();
 	font-size: var();
 	border: none;
@@ -156,7 +154,7 @@ textarea:focus {
 }
 
 span {
-	color: var();
+	color: var(--main-heading-color);
 }
 
 /* ----------------------------------
@@ -305,10 +303,48 @@ span {
 }
 
 /* ----------------------------------
-		07. Footer Part Styles	
+		07. Hot Topic Part Styles	
 ---------------------------------- */
+
+#hot-topic {
+	background: url(/assets/images/fan-comments-background.png) no-repeat center / cover;
+	text-align: center;
+}
+
+.topic-announcment::before,
+.topic-announcment::after {
+	content: ' _-_-_-_- ';
+}
+
+#hot-sub-heading {
+	line-height: 1.5em;
+}
+
+#hot-topic-item {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+}
+
+.topic-item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0 15px;
+	border-right: 1px solid #fff;
+}
+
+.topic-item:last-child {
+	margin-right: 0;
+	border: none;
+}
+
+/* ----------------------------------
+		07. Subscribe Part Styles	
+---------------------------------- */
+
 #achievement-part .container {
-	padding: 60px 0;
+	padding-top: 0;
 	margin-top: 60px;
 	background-color: #111025;
 	border: 1px solid #163164;
@@ -317,11 +353,16 @@ span {
 
 #subscribe-inner {
 	padding: 0 40px;
+	text-align: center;
 }
 
-#subscribe-form input {
+#subscribe-inner h1 {
+	color: var(--main-heading-color);
+}
+
+#subscribe-form input,
+#subscribe-button {
 	width: 50%;
-	padding: 10px 15px;
 	color: var(--main-heading-color);
 	background-color: #16316428;
 	font-family: var(--main-font);
@@ -329,7 +370,12 @@ span {
 	border-radius: 5px;
 }
 
-
+#subscribe-button {
+	width: 20%;
+	margin-left: 15px;
+	border: none;
+	cursor: pointer;
+}
 
 /* ----------------------------------
 		08. Footer Part Styles	
@@ -373,8 +419,5 @@ span {
 
 #social-links a i:hover {
 	color: var(--main-text-color);
-}
-
-#copyright a {
-	color: var(--main-heading-color);
+	border-color: var(--main-text-color);
 }
