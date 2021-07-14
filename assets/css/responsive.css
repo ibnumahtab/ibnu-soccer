@@ -1,7 +1,7 @@
 /* ----------------------------------
 		01. Mobile Devices	
 ---------------------------------- */
-@media only screen and (min-width: 320px) and (max-width: 668px) {
+@media only screen and (max-width: 668px) {
     #menu-bar {
         display: none;
     }
@@ -83,7 +83,7 @@
     #stream-image {
         margin-top: 40px;
     }
-   
+
     #hot-topic {
         text-align: center;
     }
@@ -136,5 +136,89 @@
     #social-links a i {
         padding: 10px;
         margin: 5px;
+    }
+}
+
+/* ----------------------------------
+		01. Tablet Devices	
+---------------------------------- */
+@media only screen and (min-width: 669px) and (max-width: 992px) {
+    #menu-bar {
+        display: none;
+    }
+
+    #header-part .container {
+        padding: 0 35px;
+    }
+
+    #main-banner {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #banner-title h1 {
+        font-size: 40px;
+    }
+
+    .btn {
+        display: block;
+    }
+
+    #player-hit img {
+        top: 2%;
+    }
+
+    #football img {
+        top: 30%;
+        animation: football .8s linear infinite;
+    }
+
+    #players-part .container {
+        width: 80%;
+    }
+
+    #players {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    #stream-banner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #stream-description {
+        padding-right: 0;
+    }
+
+    #hot-topic-item * {
+        border: none;
+    }
+
+    #hot-topic-item {
+        flex-direction: column;
+    }
+
+    .watch-live {
+        margin-bottom: 50px;
+    }
+
+    #subscribe-form input {
+        display: block;
+        width: 100%;
+    }
+
+    #subscribe-button {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #footer-text h1 {
+        font-size: 50px;
     }
 }
