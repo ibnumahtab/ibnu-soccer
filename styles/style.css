@@ -73,7 +73,7 @@
 	/* --→ Colors ←-- */
 	--main-color: #181733;
 	--main-gradient: linear-gradient(to right, #181733, #cd122d);
-	--secondary-gradient: linear-gradient(to left, #181733, #163164);
+	--secondary-gradient: linear-gradient(to right, #181733 0%, #163164 51%, #181733 100%);
 	--main-text-color: #ffffff;
 	--main-heading-color: #fdc52c;
 	--secondary-color: #cd122d;
@@ -166,26 +166,45 @@ span {
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding: 80px 0;
 }
 
 .btn {
-	padding: 10px 20px;
-	color: var(--main-heading-color);
 	background-image: var(--secondary-gradient);
+	margin: 10px;
+	padding: 10px 20px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;
+	border-radius: 10px;
 }
+
+.btn:hover {
+	background-position: right center;
+	/* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+
 
 /* ----------------------------------
 		04. Header Part Styles	
 ---------------------------------- */
+
 #header-part {
-	height: 100vh;
 	background-image: var(--main-gradient);
 	position: relative;
 	overflow: hidden;
 }
 
 #header-part:hover #football img {
-	animation: football .8s linear .1s infinite;
+	animation: football .8s linear infinite;
+}
+
+#header-part .container {
+	padding: 0;
 }
 
 /* → Menu Bar ← */
@@ -232,4 +251,28 @@ span {
 	top: -8%;
 	left: 25%;
 	width: 75%;
+}
+
+/* ----------------------------------
+		05. Main Part Styles	
+---------------------------------- */
+
+#main-part {
+	background-image: var(--secondary-gradient);
+}
+
+#players-part .container {
+	width: 1030px;
+}
+
+#players {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+#player {
+	margin: 15px;
+	padding: 15px;
+	box-shadow: 0 0 12px #ffffff33;
+	background-image: var(--secondary-gradient);
 }
