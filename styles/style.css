@@ -34,23 +34,29 @@
 
 	Table of Content
 	----------------
-	00. Import Required Files
+	00. Import Required Files and Animation	
 	01. Root - Custom Properties
 	02. Utilities
 	03. Common Class Styles
-	04. 
-	05. 
-	06. 
-	07. 
-	08. 
-	09.
-	10.
+
+	04. Header Part Styles
+		a. Menu Bar
+		b. Banner
+	
+	05. Main Part Styles
+		a. Players Part
+		b. Stream Part
+		c. Hot Topic Part
+		d. Subscribe Part
+
+	06. Footer Part Styles
 
  ==========================================================
 
 /* ----------------------------------
-		00. Import Required Files		
+		00. Import Required Files and Animation		
 ---------------------------------- */
+
 /* --→ Google Fonts ←-- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&family=Ubuntu&display=swap');
 
@@ -253,6 +259,7 @@ span {
 	background-image: var(--secondary-gradient);
 }
 
+/* → Players Part ← */
 #players-part .container {
 	width: 1060px;
 }
@@ -273,12 +280,9 @@ span {
 	color: var(--main-color);
 }
 
-/* ----------------------------------
-		06. Stream Part Styles	
----------------------------------- */
-
+/* → Stream Part ← */
 #stream-part {
-	background: url('assets/images/barca-today.jpg') no-repeat center / cover fixed;
+	background: url('/assets/images/barca-today.jpg') no-repeat center / cover fixed;
 }
 
 #stream-banner {
@@ -297,12 +301,9 @@ span {
 	border-image-slice: 1;
 }
 
-/* ----------------------------------
-		07. Hot Topic Part Styles	
----------------------------------- */
-
+/* → Hot Topic Part ← */
 #hot-topic {
-	background: url('assets/images/fan-comments-background.png') no-repeat center / cover;
+	background: url('/assets/images/fan-comments-background.png') no-repeat center / cover;
 	text-align: center;
 }
 
@@ -330,11 +331,8 @@ span {
 	border: none;
 }
 
-/* ----------------------------------
-		07. Subscribe Part Styles	
----------------------------------- */
-
-#achievement-part .container {
+/* → Subscribe Part ← */
+#subscribe-part .container {
 	padding-top: 0;
 	margin-top: 60px;
 	background-color: #111025;
@@ -358,7 +356,7 @@ span {
 }
 
 /* ----------------------------------
-		08. Footer Part Styles	
+		06. Footer Part Styles	
 ---------------------------------- */
 
 #footer-part {
