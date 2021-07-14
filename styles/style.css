@@ -142,6 +142,7 @@ input,
 input:focus,
 button {
 	display: inline-block;
+	height: 70px;
 	width: 50%;
 	padding: 10px 15px;
 	color: var(--main-color);
@@ -346,8 +347,9 @@ span {
 	text-align: center;
 }
 
-#subscribe-inner h1 {
+#subscribe-inner h2 {
 	color: var(--main-color);
+	margin: 50px 0;
 }
 
 #subscribe-button {

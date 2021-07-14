@@ -62,14 +62,79 @@
         line-height: 1.5em;
     }
 
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
 
+    #stream-banner {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    #stream-part .container {
+        padding: 30px 0;
+    }
 
+    #stream-description {
+        padding-right: 0;
+    }
+
+    #stream-image {
+        margin-top: 40px;
+    }
    
-    #stream-part,
-    #hot-topic,
-    #subscribe-part,
-    #footer-part {
-        display: none;
+    #hot-topic {
+        text-align: center;
+    }
+
+    #hot-sub-heading {
+        font-size: 22px;
+    }
+
+    #hot-topic-item {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .gain.topic-item {
+        padding: 0;
+    }
+
+    .gain.topic-item h2 {
+        font-size: 22px;
+    }
+
+    #hot-topic-item * {
+        border: none;
+    }
+
+    #subscribe-inner {
+        padding: 0 10px;
+    }
+
+    #subscribe-form input {
+        display: block;
+        height: 80%;
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #subscribe-button {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    #footer-logo {
+        flex-direction: column;
+    }
+
+    #footer-text h1 {
+        font-size: 35px;
+    }
+
+    #social-links a i {
+        padding: 10px;
+        margin: 5px;
     }
 }
