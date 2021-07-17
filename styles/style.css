@@ -345,6 +345,18 @@ span {
 	transform: scale(1.1);
 }
 
+/* → Gallery Images Part ← */
+#image-gallary {
+	text-align: center;
+	overflow: hidden;
+}
+
+#gallery-image-container {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 20px;
+}
+
 /* → Hot Topic Part ← */
 #hot-topic {
 	background: url('../assets/images/fan-comments-background.png') no-repeat center / cover;
