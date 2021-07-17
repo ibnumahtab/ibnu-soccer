@@ -353,8 +353,37 @@ span {
 
 #gallery-image-container {
 	display: grid;
-	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 20px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	grid-auto-flow: dense;
+}
+
+.gallery-image-wrapper img {
+	height: 100%;
+}
+
+.gallery-image-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery-image-wrapper:after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	background: #222f3e;
+	position: absolute;
+	top: 0;
+	left: 0;
+	
+}
+
+#gallery-image-1 {
+	grid-column: span 2;
+}
+
+#gallery-image-2 {
+	grid-row: span 2;
 }
 
 /* → Hot Topic Part ← */
