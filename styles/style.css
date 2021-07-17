@@ -97,6 +97,24 @@
 	background-color: var(--main-color);
 }
 
+/* → Scrollbar Styles ← */
+
+::-webkit-scrollbar {
+	width: 20px;
+	background: var(--secondary-gradient);
+}
+
+::-webkit-scrollbar-track {
+	box-shadow: inset 0 0 5px #ffffff41;
+	background: var(--secondary-gradient);
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--main-gradient);
+	border-radius: 10px;
+}
+
 /* ----------------------------------
 		02. Utilities		
 ---------------------------------- */
