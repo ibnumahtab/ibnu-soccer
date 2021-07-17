@@ -100,7 +100,7 @@
 /* → Scrollbar Styles ← */
 
 ::-webkit-scrollbar {
-	width: 20px;
+	width: 15px;
 	background: var(--secondary-gradient);
 }
 
@@ -111,8 +111,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--main-gradient);
+	background: var(--main-color);
 	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: var(--main-gradient);
 }
 
 /* ----------------------------------
