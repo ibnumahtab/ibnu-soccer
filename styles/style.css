@@ -300,6 +300,21 @@ span {
 	background-image: var(--secondary-gradient);
 }
 
+.player-image {
+	overflow: hidden;
+}
+
+.player-image img,
+#stream-image img {
+	transition: transform .8s ease;
+	cursor: pointer;
+}
+
+.player-image:hover img,
+#stream-image:hover img {
+	transform: scale(1.2);
+}
+
 #player-name {
 	color: var(--main-color);
 }
@@ -323,6 +338,11 @@ span {
 	border: 10px solid;
 	border-image: var(--secondary-gradient);
 	border-image-slice: 1;
+	overflow: hidden;
+}
+
+#stream-image img {
+	transform: scale(1.1);
 }
 
 /* → Hot Topic Part ← */
